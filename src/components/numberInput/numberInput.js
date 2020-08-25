@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsPlusCircle, BsDashCircle } from "react-icons/bs";
 
-import './NumberInput.scss';
+import './numberInput.scss';
 
 const NumberInput = ({ title, value, plus, minus }) => {
     return (
