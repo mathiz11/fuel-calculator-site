@@ -6,8 +6,8 @@ import SEO from '../components/seo';
 
 const Home = () => {
   const [stepConso, setStepConso] = useState(0.2);
-  const [specialConso, setSpecialConso] = useState(0.7);
-  const [special, setSpecial] = useState(1);
+  const [specialConso, setSpecialConso] = useState(0.6);
+  const [special, setSpecial] = useState(0);
   const [showCalcul, setShowCalcul] = useState(false);
   const [inputList, setInputList] = useState([{ name: "test", value: undefined, isStep: true }]);
   const [result, setResult] = useState(undefined);
@@ -72,7 +72,7 @@ const Home = () => {
             <button
               disabled={stepConso === 0 || specialConso === 0 || special === 0}
               onClick={() => generateForm()}
-              className={`rounded-btn${(stepConso === 0 || specialConso === 0 || special === 0) ? ` disabled` : ``}`}
+              className={(stepConso === 0 || specialConso === 0 || special === 0) ? `rounded-btn-disabled` : `rounded-btn`}
             >
               <BsChevronDown />
             </button>

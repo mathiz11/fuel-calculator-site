@@ -29,6 +29,21 @@ footer {
     }
 }
 
+.rounded-btn-disabled {
+    background-color: #3F334D;
+    opacity: 60%;
+    margin-top: 1rem;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    &:focus {
+        outline: 0;
+    }
+}
+
+
 .container {
     padding-bottom: 2rem;  
 }
