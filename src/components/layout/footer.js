@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer>Footer</footer>
+        <footer>&copy; 2020 Mathis Enjolras</footer>
     )
 }
 

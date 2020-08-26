@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Layout from '../components/layout/layout';
 import NumberInput from '../components/numberInput/numberInput';
 import { BsChevronDown } from 'react-icons/bs';
+import SEO from '../components/seo';
 
 const Home = () => {
   const [stepConso, setStepConso] = useState(0.2);
@@ -41,11 +42,12 @@ const Home = () => {
     inputList.forEach(input => {
       essence += input.isStep ? input.value * stepConso : input.value * specialConso;
     });
-    setResult(essence);
+    setResult(essence.toFixed(2));
   }
 
   return (
     <Layout>
+      <SEO title="Accueil" />
       <div className="home">
         <div className="container">
           <NumberInput
@@ -93,8 +95,8 @@ const Home = () => {
             </div>
           )}
           {result && (
-            <div id="result">
-              <span>{result}</span>
+            <div className="result mx-auto d-block">
+              <h3>{result} L</h3>
             </div>
           )}
         </div>

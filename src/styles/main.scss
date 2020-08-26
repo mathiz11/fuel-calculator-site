@@ -59,16 +59,21 @@ footer {
     }
 }
 
-#result {
+.result {
+    padding-top: 4.4rem;
     text-align: center;
     border: 0.25rem solid #3F334D;
     color: #3F334D;
-    font-size: 3rem;
     border-radius: 50%;
     width: 14rem;
     height: 14rem;
-    span {
-        display: inline-block;
-        padding-top: 3.8rem;
+    margin-top: 3rem;
+    h3 {
+        font-size: 3rem;
     }
+}
+
+#page-404 {
+    padding: 13.3rem 0;
+    text-align: center;
 }

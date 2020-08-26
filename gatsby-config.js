@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Calculateur d'essence`,
-    description: ``,
-    author: `@gatsbyjs`,
+    description: `Un calculateur d'essence pour les courses automobiles`,
+    author: `Mathis Enjolras`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/fuel.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`
