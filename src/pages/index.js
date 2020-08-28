@@ -84,7 +84,7 @@ const Home = () => {
                 {inputList.map((input, i) => (
                   <div key={i} className="form-group">
                     <label>{input.isStep ? 'Liaison' : 'Spéciale'}</label>
-                    <input type="number" className="form-control" id={i} name={input.name} value={input.value} onChange={e => handleChange(e, i)} required />
+                    <input type="number" step="0.1" className="form-control" id={i} name={input.name} value={input.value} onChange={e => handleChange(e, i)} required />
                   </div>
                 ))}
                 <div className="text-center">
