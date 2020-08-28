@@ -5,8 +5,8 @@ import { BsChevronDown } from 'react-icons/bs';
 import SEO from '../components/seo';
 
 const Home = () => {
-  const [stepConso, setStepConso] = useState(0.2);
-  const [specialConso, setSpecialConso] = useState(0.6);
+  const [stepConso, setStepConso] = useState(0.20);
+  const [specialConso, setSpecialConso] = useState(0.60);
   const [special, setSpecial] = useState(0);
   const [showCalcul, setShowCalcul] = useState(false);
   const [inputList, setInputList] = useState([{ name: "test", value: undefined, isStep: true }]);
@@ -53,14 +53,14 @@ const Home = () => {
           <NumberInput
             title={'Consommation liaison'}
             value={stepConso}
-            plus={() => changeStepConso(0.1)}
-            minus={() => changeStepConso(-0.1)}
+            plus={() => changeStepConso(0.01)}
+            minus={() => changeStepConso(-0.01)}
           />
           <NumberInput
             title={'Consommation spéciale'}
             value={specialConso}
-            plus={() => changeSpecialConso(0.1)}
-            minus={() => changeSpecialConso(-0.1)}
+            plus={() => changeSpecialConso(0.01)}
+            minus={() => changeSpecialConso(-0.01)}
           />
           <NumberInput
             title={'Spéciales'}
@@ -83,7 +83,7 @@ const Home = () => {
               <form className="custom-form" onSubmit={handleSubmit}>
                 {inputList.map((input, i) => (
                   <div key={i} className="form-group">
-                    <label>{input.isStep ? 'Liason' : 'Spéciale'}</label>
+                    <label>{input.isStep ? 'Liaison' : 'Spéciale'}</label>
                     <input type="number" className="form-control" id={i} name={input.name} value={input.value} onChange={e => handleChange(e, i)} required />
                   </div>
                 ))}
