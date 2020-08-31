@@ -5,10 +5,10 @@ import Footer from './footer'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../../styles/main.scss'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title }) => {
   return (
     <>
-      <Header />
+      <Header title={title} />
       <main>{children}</main>
       <Footer />
     </>

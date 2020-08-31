@@ -1,9 +1,8 @@
 import React from 'react'
-import { MdLocalGasStation } from 'react-icons/md'
 
-const Header = () => {
+const Header = ({ title }) => {
     return (
-        <header>Calculateur d'essence <MdLocalGasStation /></header>
+        <header><h1>{title}</h1></header>
     )
 }
 

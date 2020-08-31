@@ -112,3 +112,29 @@ footer {
         outline: 0;
     }
 }
+
+h1 {
+    font-size: 2rem;
+}
+
+.home a {
+    display: block;
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+.bg-shadow-blue {
+    background-color: #7284A8;
+}
+
+.bg-dark-liver {
+    background-color: #474954;
+}
