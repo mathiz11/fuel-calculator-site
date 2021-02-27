@@ -1,6 +1,6 @@
 header {
     text-align: center;
-    background-color: #3F334D;
+    background-color: #0D324D;
     padding: 1.5rem 0;
     color: white;
     font-size: 1.5rem;
@@ -11,7 +11,7 @@ header {
 
 footer {
     text-align: center;
-    background-color: #3F334D;
+    background-color: #0D324D;
     padding: 1.5rem 0;
     color: white;
 }
@@ -20,7 +20,7 @@ footer {
     margin-top: 1rem;
     border-radius: 50%;
     border: none;
-    background-color: #3F334D;
+    background-color: #0D324D;
     color: white;
     width: 3rem;
     height: 3rem;
@@ -30,7 +30,7 @@ footer {
 }
 
 .rounded-btn-disabled {
-    background-color: #3F334D;
+    background-color: #0D324D;
     opacity: 60%;
     margin-top: 1rem;
     border-radius: 50%;
@@ -48,14 +48,8 @@ footer {
     padding-bottom: 2rem;  
 }
 
-.bg-dark-blue {
-    background-color: #3F334D;
-    color: white;
-    padding: 1rem 0;
-}
-
 #calculator {
-    border: solid 0.25rem #3F334D;
+    border: solid 0.25rem #0D324D;
     // text-align: center;
     border-radius: 0.25rem;
     margin-top: 2rem;
@@ -66,7 +60,7 @@ footer {
 }
 
 .calculate-btn {
-    background-color: #3F334D;
+    background-color: #0D324D;
     color: white;
     border: none;
     &:focus {
@@ -77,7 +71,7 @@ footer {
 .result {
     padding-top: 4.4rem;
     text-align: center;
-    border: 0.25rem solid #3F334D;
+    border: 0.25rem solid #0D324D;
     color: #3F334D;
     border-radius: 50%;
     width: 14rem;
@@ -103,7 +97,7 @@ footer {
     margin-left: 1rem;
     border-radius: 50%;
     border: none;
-    background-color: #3F334D;
+    background-color: #0D324D;
     color: white;
     width: 2.2rem;
     height: 2.2rem;
@@ -131,10 +125,22 @@ h1 {
     }
 }
 
-.bg-shadow-blue {
-    background-color: #7284A8;
+.bg-black {
+    background-color: #020202;
 }
 
-.bg-dark-liver {
-    background-color: #474954;
+.bg-prussian-blue {
+    background-color: #0D324D;
+}
+
+.bg-chinese-violet {
+    background-color: #7F5A83;
+}
+
+.bg-glossy-grape {
+    background-color: #A188A6;
+}
+
+.bg-silver-metallic {
+    background-color: #9DA2AB;
 }
